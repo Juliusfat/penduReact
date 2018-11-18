@@ -1,0 +1,27 @@
+.penduLetter > .letter {
+  font-size: 2em;
+  flex: 1 1 calc(100% / 13 - 0.4em);
+  outline: 0.08em solid silver;
+  margin: 0.2em;
+  display: flex;
+  cursor: default;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.penduLetter > .letter.visible:hover {
+  background : #4267B2;
+}
+
+.penduLetter > .letter.hidden {
+  background: #7998AD;
+  cursor: not-allowed;
+}
+
+.penduLetter > .letter.visible {
+  background: #F9DE52;
+}
+
+.penduLetter> .letter > .symbol {
+  margin: auto;
+}
